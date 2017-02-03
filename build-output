@@ -20,10 +20,10 @@ Fetching upstream changes from https://github.com/egirdhar/SampleMvcApp-Pipeline
  > C:\Program Files\Git\bin\git.exe -c core.askpass=true fetch --tags --progress https://github.com/egirdhar/SampleMvcApp-Pipeline.git +refs/heads/*:refs/remotes/origin/*
  > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
  > C:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
-Checking out Revision 0aa09232df82219077dbd59af588f3f1bfdbd642 (refs/remotes/origin/master)
+Checking out Revision 25b6a53b5e158a3bd65a55779c468b4e14768bd4 (refs/remotes/origin/master)
  > C:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
- > C:\Program Files\Git\bin\git.exe checkout -f 0aa09232df82219077dbd59af588f3f1bfdbd642
- > C:\Program Files\Git\bin\git.exe rev-list 5091feebc143d32def5a6d032509264ba84c7e30 # timeout=10
+ > C:\Program Files\Git\bin\git.exe checkout -f 25b6a53b5e158a3bd65a55779c468b4e14768bd4
+ > C:\Program Files\Git\bin\git.exe rev-list 25b6a53b5e158a3bd65a55779c468b4e14768bd4 # timeout=10
 [Pipeline] stage (Build)
 Using the ‘stage’ step without a block argument is deprecated
 Entering stage Build
@@ -33,111 +33,111 @@ Proceeding
 
 C:\Jenkins\workspace\xebialabs-training>"C:/Program Files (x86)/Jenkins/apps/nuget.exe" restore SampleWebApp.sln 
 Installing 'Antlr 3.4.1.9004'.
+Installing 'Autofac 3.5.0'.
 Installing 'Autofac.Mvc5 3.3.1'.
 Installing 'AutoMapper 4.2.1'.
-Installing 'Autofac 3.5.0'.
 Successfully installed 'Autofac.Mvc5 3.3.1'.
 Successfully installed 'Antlr 3.4.1.9004'.
+Installing 'bootstrap 3.3.2'.
 Successfully installed 'Autofac 3.5.0'.
 Installing 'DelegateDecompiler 0.18.0'.
-Installing 'bootstrap 3.3.2'.
 Successfully installed 'DelegateDecompiler 0.18.0'.
 Installing 'DelegateDecompiler.EntityFramework 0.18.0'.
 Successfully installed 'AutoMapper 4.2.1'.
 Successfully installed 'DelegateDecompiler.EntityFramework 0.18.0'.
 Installing 'EntityFramework 6.1.3'.
-Installing 'GenericLibsBase 1.0.1'.
+Successfully installed 'bootstrap 3.3.2'.
 Installing 'GenericServices 1.0.9'.
+Installing 'GenericLibsBase 1.0.1'.
 Successfully installed 'GenericLibsBase 1.0.1'.
 Successfully installed 'GenericServices 1.0.9'.
-Successfully installed 'bootstrap 3.3.2'.
 Installing 'jQuery.Notify 0.4.4.2'.
-Successfully installed 'jQuery.Notify 0.4.4.2'.
 Installing 'jQuery 1.10.2'.
+Successfully installed 'jQuery.Notify 0.4.4.2'.
 Installing 'jQuery.UI.Combined 1.10.4'.
+Successfully installed 'jQuery 1.10.2'.
 Installing 'jQuery.Validation 1.11.1'.
 Successfully installed 'jQuery.Validation 1.11.1'.
-Successfully installed 'jQuery 1.10.2'.
 Installing 'log4net 2.0.3'.
 Installing 'MarkdownSharp 1.13.0.0'.
 Successfully installed 'MarkdownSharp 1.13.0.0'.
-Installing 'Microsoft.AspNet.Identity.Core 2.1.0'.
 Successfully installed 'jQuery.UI.Combined 1.10.4'.
-Successfully installed 'Microsoft.AspNet.Identity.Core 2.1.0'.
 Installing 'Microsoft.AspNet.Identity.EntityFramework 2.1.0'.
-Installing 'Microsoft.AspNet.Identity.Owin 2.1.0'.
+Installing 'Microsoft.AspNet.Identity.Core 2.1.0'.
 Successfully installed 'Microsoft.AspNet.Identity.EntityFramework 2.1.0'.
+Successfully installed 'Microsoft.AspNet.Identity.Core 2.1.0'.
+Installing 'Microsoft.AspNet.Identity.Owin 2.1.0'.
 Successfully installed 'Microsoft.AspNet.Identity.Owin 2.1.0'.
 Successfully installed 'log4net 2.0.3'.
 Installing 'Microsoft.AspNet.Mvc 5.2.3'.
-Successfully installed 'Microsoft.AspNet.Mvc 5.2.3'.
+Successfully installed 'EntityFramework 6.1.3'.
+Installing 'Microsoft.AspNet.Razor 3.2.3'.
 Installing 'Microsoft.AspNet.SignalR 2.0.3'.
 Successfully installed 'Microsoft.AspNet.SignalR 2.0.3'.
-Installing 'Microsoft.AspNet.Razor 3.2.3'.
+Successfully installed 'Microsoft.AspNet.Mvc 5.2.3'.
 Successfully installed 'Microsoft.AspNet.Razor 3.2.3'.
-Successfully installed 'EntityFramework 6.1.3'.
 Installing 'Microsoft.AspNet.SignalR.Core 2.0.3'.
-Installing 'Microsoft.AspNet.SignalR.JS 2.0.3'.
-Successfully installed 'Microsoft.AspNet.SignalR.JS 2.0.3'.
 Successfully installed 'Microsoft.AspNet.SignalR.Core 2.0.3'.
+Installing 'Microsoft.AspNet.SignalR.JS 2.0.3'.
 Installing 'Microsoft.AspNet.SignalR.SystemWeb 2.0.3'.
 Installing 'Microsoft.AspNet.Web.Optimization 1.1.3'.
+Successfully installed 'Microsoft.AspNet.SignalR.JS 2.0.3'.
+Installing 'Microsoft.AspNet.WebPages 3.2.3'.
 Successfully installed 'Microsoft.AspNet.SignalR.SystemWeb 2.0.3'.
 Successfully installed 'Microsoft.AspNet.Web.Optimization 1.1.3'.
-Installing 'Microsoft.AspNet.WebPages 3.2.3'.
-Installing 'Microsoft.Owin 3.0.0'.
 Installing 'Microsoft.jQuery.Unobtrusive.Validation 3.2.3'.
-Successfully installed 'Microsoft.Owin 3.0.0'.
-Installing 'Microsoft.Owin.Security 3.0.0'.
 Successfully installed 'Microsoft.jQuery.Unobtrusive.Validation 3.2.3'.
 Successfully installed 'Microsoft.AspNet.WebPages 3.2.3'.
-Successfully installed 'Microsoft.Owin.Security 3.0.0'.
+Installing 'Microsoft.Owin 3.0.0'.
+Successfully installed 'Microsoft.Owin 3.0.0'.
 Installing 'Microsoft.Owin.Host.SystemWeb 2.1.0'.
-Successfully installed 'Microsoft.Owin.Host.SystemWeb 2.1.0'.
 Installing 'Microsoft.Owin.Security.Cookies 3.0.0'.
 Successfully installed 'Microsoft.Owin.Security.Cookies 3.0.0'.
-Installing 'Microsoft.Owin.Security.Google 3.0.0'.
-Successfully installed 'Microsoft.Owin.Security.Google 3.0.0'.
+Successfully installed 'Microsoft.Owin.Host.SystemWeb 2.1.0'.
+Installing 'Microsoft.Owin.Security 3.0.0'.
 Installing 'Microsoft.Owin.Security.Facebook 3.0.0'.
 Successfully installed 'Microsoft.Owin.Security.Facebook 3.0.0'.
+Installing 'Microsoft.Owin.Security.Google 3.0.0'.
+Successfully installed 'Microsoft.Owin.Security.Google 3.0.0'.
+Successfully installed 'Microsoft.Owin.Security 3.0.0'.
 Installing 'Microsoft.Owin.Security.MicrosoftAccount 3.0.0'.
 Successfully installed 'Microsoft.Owin.Security.MicrosoftAccount 3.0.0'.
-Installing 'Microsoft.Owin.Security.Twitter 2.1.0'.
 Installing 'Microsoft.Owin.Security.OAuth 3.0.0'.
-Successfully installed 'Microsoft.Owin.Security.Twitter 2.1.0'.
 Successfully installed 'Microsoft.Owin.Security.OAuth 3.0.0'.
+Installing 'Microsoft.Owin.Security.Twitter 2.1.0'.
+Installing 'Microsoft.Web.Infrastructure 1.0.0.0'.
+Successfully installed 'Microsoft.Owin.Security.Twitter 2.1.0'.
+Successfully installed 'Microsoft.Web.Infrastructure 1.0.0.0'.
 Installing 'Modernizr 2.6.2'.
 Successfully installed 'Modernizr 2.6.2'.
-Installing 'Microsoft.Web.Infrastructure 1.0.0.0'.
-Successfully installed 'Microsoft.Web.Infrastructure 1.0.0.0'.
-Installing 'Newtonsoft.Json 6.0.4'.
 Installing 'Mono.Reflection 1.0.0.0'.
-Installing 'Owin 1.0'.
 Successfully installed 'Mono.Reflection 1.0.0.0'.
-Successfully installed 'Owin 1.0'.
+Installing 'Owin 1.0'.
 Installing 'Respond 1.2.0'.
+Successfully installed 'Owin 1.0'.
 Successfully installed 'Respond 1.2.0'.
 Installing 'WebGrease 1.5.2'.
-Installing 'Moq 4.2.1408.0717'.
+Installing 'Newtonsoft.Json 6.0.4'.
 Installing 'Microsoft.Owin 2.1.0'.
 Successfully installed 'WebGrease 1.5.2'.
-Successfully installed 'Newtonsoft.Json 6.0.4'.
-Installing 'Microsoft.Owin.Security 2.1.0'.
+Installing 'Moq 4.2.1408.0717'.
 Successfully installed 'Microsoft.Owin 2.1.0'.
-Successfully installed 'Microsoft.Owin.Security 2.1.0'.
 Successfully installed 'Moq 4.2.1408.0717'.
+Installing 'Microsoft.Owin.Security 2.1.0'.
+Successfully installed 'Microsoft.Owin.Security 2.1.0'.
 Installing 'NUnit 2.6.3'.
+Successfully installed 'Newtonsoft.Json 6.0.4'.
 Successfully installed 'NUnit 2.6.3'.
 [Pipeline] bat
 [xebialabs-training] Running batch script
 
-C:\Jenkins\workspace\xebialabs-training>"C:/Program Files (x86)/MSBuild/14.0/Bin/MSBuild.exe" SampleWebApp.sln  /p:OutDir=target /p:Configuration=Debug /p:Platform="Any CPU" /p:ProductVersion=1.0.0.25 
+C:\Jenkins\workspace\xebialabs-training>"C:/Program Files (x86)/MSBuild/14.0/Bin/MSBuild.exe" SampleWebApp.sln  /p:OutDir=target /p:Configuration=Debug /p:Platform="Any CPU" /p:ProductVersion=1.0.0.29 
 Microsoft (R) Build Engine version 12.0.31101.0
 [Microsoft .NET Framework, version 4.0.30319.42000]
 Copyright (C) Microsoft Corporation. All rights reserved.
 
 Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
-Build started 2/4/2017 1:41:16 AM.
+Build started 2/4/2017 2:35:08 AM.
 Project "C:\Jenkins\workspace\xebialabs-training\SampleWebApp.sln" on node 1 (default targets).
 ValidateSolutionConfiguration:
   Building solution configuration "Debug|Any CPU".
@@ -381,7 +381,7 @@ Build succeeded.
     5 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:04.02
+Time Elapsed 00:00:03.45
 [Pipeline] stage (Test)
 Using the ‘stage’ step without a block argument is deprecated
 Entering stage Test
@@ -400,12 +400,13 @@ Runtime Environment
 Test Files
     Tests/target/Tests.dll
 
+
 Test Run Summary
   Overall result: Passed
   Test Count: 24, Passed: 24, Failed: 0, Warnings: 0, Inconclusive: 0, Skipped: 0
-  Start time: 2017-02-03 20:11:22Z
-    End time: 2017-02-03 20:11:25Z
-    Duration: 2.631 seconds
+  Start time: 2017-02-03 21:05:13Z
+    End time: 2017-02-03 21:05:16Z
+    Duration: 2.807 seconds
 
 Results (nunit2) saved as TestResult.xml
 [Pipeline] step
@@ -416,6 +417,7 @@ Entering stage Code Analysis
 Proceeding
 [Pipeline] bat
 [xebialabs-training] Running batch script
+
 C:\Jenkins\workspace\xebialabs-training>"C:/Program Files (x86)/Jenkins/apps/sonar-scanner-msbuild-2.2.0.24/SonarQube.Scanner.MSBuild.exe" begin  /d:sonar.host.url=http://localhost:9000/  /k:"SampleWebApp" /n:"SampleWebApp" /v:"1.0"  
 SonarQube Scanner for MSBuild 2.2
 Default properties file was found at C:\Program Files (x86)\Jenkins\apps\sonar-scanner-msbuild-2.2.0.24\SonarQube.Analysis.xml
@@ -423,12 +425,12 @@ Loading analysis properties from C:\Program Files (x86)\Jenkins\apps\sonar-scann
 Pre-processing started.
 Preparing working directories...
 SonarQube Scanner for MSBuild 2.2
-01:41:26.697  Updating build integration targets...
-01:41:26.719  Fetching analysis configuration settings...
-01:41:27.651  Generating rulesets...
-01:41:27.683  Provisioning analyzer assemblies for cs...
-01:41:27.685  Installing required Roslyn analyzers...
-01:41:27.719  Pre-processing succeeded.
+02:35:17.9  Updating build integration targets...
+02:35:17.917  Fetching analysis configuration settings...
+02:35:18.81  Generating rulesets...
+02:35:18.85  Provisioning analyzer assemblies for cs...
+02:35:18.852  Installing required Roslyn analyzers...
+02:35:18.895  Pre-processing succeeded.
 [Pipeline] bat
 [xebialabs-training] Running batch script
 
@@ -438,7 +440,7 @@ Microsoft (R) Build Engine version 12.0.31101.0
 Copyright (C) Microsoft Corporation. All rights reserved.
 
 Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
-Build started 2/4/2017 1:41:28 AM.
+Build started 2/4/2017 2:35:20 AM.
 Project "C:\Jenkins\workspace\xebialabs-training\SampleWebApp.sln" on node 1 (Rebuild target(s)).
 ValidateSolutionConfiguration:
   Building solution configuration "Debug|Any CPU".
@@ -470,10 +472,10 @@ PrepareForBuild:
 GenerateTargetFrameworkMonikerAttribute:
 Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
 CreateProjectSpecificDirs:
-  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\DataLayer_AnyCPU_Debug_3749" doesn't exist. Skipping.
-  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\DataLayer_AnyCPU_Debug_3749".
-  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\DataLayer_AnyCPU_Debug_3749" doesn't exist. Skipping.
-  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\DataLayer_AnyCPU_Debug_3749".
+  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\DataLayer_AnyCPU_Debug_5894" doesn't exist. Skipping.
+  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\DataLayer_AnyCPU_Debug_5894".
+  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\DataLayer_AnyCPU_Debug_5894" doesn't exist. Skipping.
+  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\DataLayer_AnyCPU_Debug_5894".
 CoreCompile:
   C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:CODE_ANALYSIS;DEBUG;TRACE /highentropyva+ /reference:C:\Jenkins\workspace\xebialabs-training\packages\Autofac.3.5.0\lib\net40\Autofac.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\DelegateDecompiler.0.18.0\lib\net40-Client\DelegateDecompiler.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\DelegateDecompiler.EntityFramework.0.18.0\lib\net45\DelegateDecompiler.EntityFramework.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\GenericLibsBase.1.0.1\lib\GenericLibsBase.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\GenericServices.1.0.9\lib\GenericServices.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Microsoft.CSharp.dll" /reference:C:\Jenkins\workspace\xebialabs-training\packages\Mono.Reflection.1.0.0.0\lib\Mono.Reflection.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Configuration.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\DataLayer.dll /subsystemversion:6.00 /resource:Startup\Internal\BlogsContentSimple.xml,DataLayer.Startup.Internal.BlogsContentSimple.xml /resource:Startup\Internal\BlogsContextMedium.xml,DataLayer.Startup.Internal.BlogsContextMedium.xml /target:library /warnaserror- /utf8output DataClasses\Concrete\Blog.cs DataClasses\Concrete\Helpers\TrackUpdate.cs DataClasses\Concrete\Post.cs DataClasses\Concrete\Tag.cs DataClasses\EfConfiguration.cs Startup\DataLayerInitialise.cs DataClasses\SampleWebAppDb.cs Properties\AssemblyInfo.cs Startup\DataLayerModule.cs Startup\Internal\LoadDbDataFromXml.cs "C:\WINDOWS\TEMP\.NETFramework,Version=v4.5.1.AssemblyAttributes.cs"
 _CopyFilesMarkedCopyLocal:
@@ -509,10 +511,10 @@ PrepareForBuild:
 GenerateTargetFrameworkMonikerAttribute:
 Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
 CreateProjectSpecificDirs:
-  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\ServiceLayer_AnyCPU_Debug_2580" doesn't exist. Skipping.
-  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\ServiceLayer_AnyCPU_Debug_2580".
-  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\ServiceLayer_AnyCPU_Debug_2580" doesn't exist. Skipping.
-  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\ServiceLayer_AnyCPU_Debug_2580".
+  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\ServiceLayer_AnyCPU_Debug_5064" doesn't exist. Skipping.
+  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\ServiceLayer_AnyCPU_Debug_5064".
+  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\ServiceLayer_AnyCPU_Debug_5064" doesn't exist. Skipping.
+  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\ServiceLayer_AnyCPU_Debug_5064".
 CoreCompile:
   C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:CODE_ANALYSIS;DEBUG;TRACE /highentropyva+ /reference:C:\Jenkins\workspace\xebialabs-training\packages\Autofac.3.5.0\lib\net40\Autofac.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll /reference:C:\Jenkins\workspace\xebialabs-training\DataLayer\bin\Debug\DataLayer.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\DelegateDecompiler.0.18.0\lib\net40-Client\DelegateDecompiler.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\DelegateDecompiler.EntityFramework.0.18.0\lib\net45\DelegateDecompiler.EntityFramework.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\GenericLibsBase.1.0.1\lib\GenericLibsBase.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\GenericServices.1.0.9\lib\GenericServices.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Microsoft.CSharp.dll" /reference:C:\Jenkins\workspace\xebialabs-training\packages\Mono.Reflection.1.0.0.0\lib\Mono.Reflection.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\ServiceLayer.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output BlogServices\BlogListDto.cs PostServices\DetailPostDtoAsync.cs PostServices\DetailPostDto.cs PostServices\SimplePostDtoAsync.cs PostServices\SimplePostDto.cs Properties\AssemblyInfo.cs Startup\ServiceLayerInitialise.cs Startup\ServiceLayerModule.cs TagServices\TagListDto.cs UiClasses\DropDownListType.cs UiClasses\MultiSelectListType.cs "C:\WINDOWS\TEMP\.NETFramework,Version=v4.5.1.AssemblyAttributes.cs"
 _CopyFilesMarkedCopyLocal:
@@ -547,10 +549,10 @@ Done Building Project "C:\Jenkins\workspace\xebialabs-training\ServiceLayer\Serv
 GenerateTargetFrameworkMonikerAttribute:
 Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
 CreateProjectSpecificDirs:
-  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\SampleWebApp_AnyCPU_Debug_2447" doesn't exist. Skipping.
-  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\SampleWebApp_AnyCPU_Debug_2447".
-  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\SampleWebApp_AnyCPU_Debug_2447" doesn't exist. Skipping.
-  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\SampleWebApp_AnyCPU_Debug_2447".
+  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\SampleWebApp_AnyCPU_Debug_4394" doesn't exist. Skipping.
+  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\SampleWebApp_AnyCPU_Debug_4394".
+  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\SampleWebApp_AnyCPU_Debug_4394" doesn't exist. Skipping.
+  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\SampleWebApp_AnyCPU_Debug_4394".
 CoreCompile:
   C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:CODE_ANALYSIS;DEBUG;TRACE /highentropyva+ /reference:C:\Jenkins\workspace\xebialabs-training\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Autofac.3.5.0\lib\net40\Autofac.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Autofac.Mvc5.3.3.1\lib\net45\Autofac.Integration.Mvc.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll /reference:C:\Jenkins\workspace\xebialabs-training\DataLayer\bin\Debug\DataLayer.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\DelegateDecompiler.0.18.0\lib\net40-Client\DelegateDecompiler.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\DelegateDecompiler.EntityFramework.0.18.0\lib\net45\DelegateDecompiler.EntityFramework.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\GenericLibsBase.1.0.1\lib\GenericLibsBase.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\GenericServices.1.0.9\lib\GenericServices.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\log4net.2.0.3\lib\net40-full\log4net.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.SignalR.Core.2.0.3\lib\net45\Microsoft.AspNet.SignalR.Core.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.SignalR.SystemWeb.2.0.3\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Microsoft.CSharp.dll" /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Owin.Security.Cookies.3.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Owin.Security.3.0.0\lib\net45\Microsoft.Owin.Security.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Owin.Security.Facebook.3.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Owin.Security.Google.3.0.0\lib\net45\Microsoft.Owin.Security.Google.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Owin.Security.OAuth.3.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Owin.Security.Twitter.2.1.0\lib\net45\Microsoft.Owin.Security.Twitter.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Mono.Reflection.1.0.0.0\lib\Mono.Reflection.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\mscorlib.dll" /reference:C:\Jenkins\workspace\xebialabs-training\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Owin.1.0\lib\net40\Owin.dll /reference:C:\Jenkins\workspace\xebialabs-training\ServiceLayer\bin\Debug\ServiceLayer.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Configuration.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Drawing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.EnterpriseServices.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Net.Http.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Net.Http.WebRequest.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Web.Abstractions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Web.ApplicationServices.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Web.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Web.DynamicData.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Web.Entity.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Web.Extensions.dll" /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Web.Routing.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Web.Services.dll" /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Xml.Linq.dll" /reference:C:\Jenkins\workspace\xebialabs-training\packages\WebGrease.1.5.2\lib\WebGrease.dll /debug+ /debug:full /optimize- /out:obj\Debug\SampleWebApp.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output App_Start\BundleConfig.cs App_Start\FilterConfig.cs App_Start\RouteConfig.cs Controllers\BlogsController.cs Controllers\PostsAsyncController.cs Controllers\HomeController.cs Controllers\PostsController.cs Controllers\TagsAsyncController.cs Controllers\TagsController.cs Global.asax.cs Infrastructure\AutofacDi.cs Infrastructure\DiModelBinder.cs Infrastructure\TraceGenericLogger.cs Infrastructure\Log4NetGenericLogger.cs Infrastructure\ValidationHelper.cs Infrastructure\WebUiInitialise.cs Models\InternalsInfo.cs Properties\AssemblyInfo.cs Properties\Settings.Designer.cs "C:\WINDOWS\TEMP\.NETFramework,Version=v4.5.1.AssemblyAttributes.cs"
 _CopyFilesMarkedCopyLocal:
@@ -646,10 +648,10 @@ PrepareForBuild:
 GenerateTargetFrameworkMonikerAttribute:
 Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
 CreateProjectSpecificDirs:
-  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\Tests_AnyCPU_Debug_5930" doesn't exist. Skipping.
-  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\Tests_AnyCPU_Debug_5930".
-  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\Tests_AnyCPU_Debug_5930" doesn't exist. Skipping.
-  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\Tests_AnyCPU_Debug_5930".
+  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\Tests_AnyCPU_Debug_0254" doesn't exist. Skipping.
+  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\\Tests_AnyCPU_Debug_0254".
+  Directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\Tests_AnyCPU_Debug_0254" doesn't exist. Skipping.
+  Creating directory "C:\Jenkins\workspace\xebialabs-training\.sonarqube\conf\\Tests_AnyCPU_Debug_0254".
 CoreCompile:
   C:\Program Files (x86)\MSBuild\12.0\bin\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:CODE_ANALYSIS;DEBUG;TRACE /highentropyva+ /reference:C:\Jenkins\workspace\xebialabs-training\packages\Autofac.3.5.0\lib\net40\Autofac.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\AutoMapper.4.2.1\lib\net45\AutoMapper.dll /reference:C:\Jenkins\workspace\xebialabs-training\DataLayer\bin\Debug\DataLayer.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\DelegateDecompiler.0.18.0\lib\net40-Client\DelegateDecompiler.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\DelegateDecompiler.EntityFramework.0.18.0\lib\net45\DelegateDecompiler.EntityFramework.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\GenericLibsBase.1.0.1\lib\GenericLibsBase.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\GenericServices.1.0.9\lib\GenericServices.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\log4net.2.0.3\lib\net40-full\log4net.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.SignalR.Core.2.0.3\lib\net45\Microsoft.AspNet.SignalR.Core.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Microsoft.CSharp.dll" /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Mono.Reflection.1.0.0.0\lib\Mono.Reflection.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Moq.4.2.1408.0717\lib\net40\Moq.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\mscorlib.dll" /reference:C:\Jenkins\workspace\xebialabs-training\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\NUnit.2.6.3\lib\nunit.framework.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Owin.1.0\lib\net40\Owin.dll /reference:C:\Jenkins\workspace\xebialabs-training\SampleWebApp\bin\SampleWebApp.dll /reference:C:\Jenkins\workspace\xebialabs-training\ServiceLayer\bin\Debug\ServiceLayer.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.ComponentModel.DataAnnotations.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Configuration.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll" /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll /reference:C:\Jenkins\workspace\xebialabs-training\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Xml.Linq.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\Tests.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output DependencyItems\ClassToTestClassWithPrivateCtor.cs DependencyItems\ClassWithPrivateCtor.cs DependencyItems\ConstructorParamClass.cs DependencyItems\GenericInterface.cs DependencyItems\MyDisposableClass.cs DependencyItems\ServiceTypeClass.cs DependencyItems\SimpleClass.cs Helpers\DbSnapShot.cs Helpers\DummyIDbContextWithValidation.cs Helpers\ExtendAsserts.cs Helpers\JsonHelper.cs Helpers\SimpleTagDto.cs Helpers\SimpleTagDtoAsync.cs Helpers\TestFileHelpers.cs Helpers\ModelStateTester.cs Properties\AssemblyInfo.cs Properties\Settings.Designer.cs UnitTests\Group01DataLayer\Test10SetupBlogs.cs UnitTests\Group01DataLayer\Test13Validation.cs UnitTests\Group01DataLayer\Test14ReadWriteBlogs.cs UnitTests\Group03ServiceLayer\Test10DiSimple.cs UnitTests\Group03ServiceLayer\Test11AutoFacModules.cs UnitTests\Group06Mvc\Test02Validation.cs "C:\WINDOWS\TEMP\.NETFramework,Version=v4.5.1.AssemblyAttributes.cs"
 Helpers\DummyIDbContextWithValidation.cs(60,32): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [C:\Jenkins\workspace\xebialabs-training\Tests\Tests.csproj]
@@ -739,9 +741,10 @@ Build succeeded.
     5 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:04.64
+Time Elapsed 00:00:04.94
 [Pipeline] bat
 [xebialabs-training] Running batch script
+
 C:\Jenkins\workspace\xebialabs-training>"C:/Program Files (x86)/Jenkins/apps/sonar-scanner-msbuild-2.2.0.24/MSBuild.SonarQube.Runner.exe" end 
 SonarQube Scanner for MSBuild 2.2
 Default properties file was found at C:\Program Files (x86)\Jenkins\apps\sonar-scanner-msbuild-2.2.0.24\SonarQube.Analysis.xml
@@ -766,25 +769,25 @@ INFO: Windows 7 6.1 x86
 INFO: SONAR_SCANNER_OPTS=-Xmx1024m
 INFO: User cache: C:\WINDOWS\system32\config\systemprofile\.sonar\cache
 INFO: Load global repositories
-INFO: Load global repositories (done) | time=177ms
+INFO: Load global repositories (done) | time=172ms
 INFO: User cache: C:\WINDOWS\system32\config\systemprofile\.sonar\cache
 INFO: Load plugins index
-INFO: Load plugins index (done) | time=6ms
+INFO: Load plugins index (done) | time=8ms
 INFO: SonarQube server 6.2
 INFO: Default locale: "en_US", source code encoding: "UTF-8"
 INFO: Process project properties
 INFO: Load project repositories
-INFO: Load project repositories (done) | time=137ms
+INFO: Load project repositories (done) | time=145ms
 INFO: Load quality profiles
-INFO: Load quality profiles (done) | time=36ms
+INFO: Load quality profiles (done) | time=25ms
 INFO: Load active rules
-INFO: Load active rules (done) | time=397ms
+INFO: Load active rules (done) | time=394ms
 INFO: Publish mode
 INFO: -------------  Scan DataLayer
 INFO: Load server rules
-INFO: Load server rules (done) | time=163ms
+INFO: Load server rules (done) | time=133ms
 INFO: Initializer GenericCoverageSensor
-INFO: Initializer GenericCoverageSensor (done) | time=1ms
+INFO: Initializer GenericCoverageSensor (done) | time=0ms
 INFO: Base dir: C:\Jenkins\workspace\xebialabs-training\DataLayer
 INFO: Working dir: C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\.sonar\SampleWebApp_SampleWebApp_264E1878-12DE-4099-B8D7-CC53A73FEA49
 INFO: Source paths: DataClasses/Concrete/Blog.cs, DataClasses/Concrete/Helpers/TrackUpdate.cs, DataClasses/Concrete/Post.cs, DataClasses/Concrete/Tag.cs, DataClasses/EfConfiguration.cs, Startup/DataLayerInitialise.cs, DataClasses/SampleWebAppDb.cs, Properties/AssemblyInfo.cs, Startup/DataLayerModule.cs, Startup/Internal/LoadDbDataFromXml.cs, Startup/Internal/BlogsContentSimple.xml, Startup/Internal/BlogsContextMedium.xml, App.config, packages.config
@@ -793,9 +796,9 @@ INFO: Index files
 INFO: 10 files indexed
 INFO: Quality profile for cs: Sonar way
 INFO: Sensor Lines Sensor
-INFO: Sensor Lines Sensor (done) | time=9ms
+INFO: Sensor Lines Sensor (done) | time=7ms
 INFO: Sensor SCM Sensor
-INFO: Sensor SCM Sensor (done) | time=25ms
+INFO: Sensor SCM Sensor (done) | time=16ms
 INFO: Sensor C#
 INFO: SonarAnalyzer.Scanner needs to be executed: true
 WARN: ***********************************************************************************
@@ -814,19 +817,19 @@ INFO: 7/10 files analyzed, starting to analyze: C:\Jenkins\workspace\xebialabs-t
 INFO: 8/10 files analyzed, starting to analyze: C:\Jenkins\workspace\xebialabs-training\DataLayer\Startup\DataLayerModule.cs
 INFO: 9/10 files analyzed, starting to analyze: C:\Jenkins\workspace\xebialabs-training\DataLayer\Startup\Internal\LoadDbDataFromXml.cs
 INFO: Importing analysis results from C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\.sonar\SampleWebApp_SampleWebApp_264E1878-12DE-4099-B8D7-CC53A73FEA49\output-cs
-INFO: Sensor C# (done) | time=7084ms
+INFO: Sensor C# (done) | time=6345ms
 INFO: Sensor Coverage Report Import
 INFO: Sensor Coverage Report Import (done) | time=0ms
 INFO: Sensor Coverage Report Import
-INFO: Sensor Coverage Report Import (done) | time=0ms
+INFO: Sensor Coverage Report Import (done) | time=1ms
 INFO: Sensor Unit Test Results Import
 INFO: Sensor Unit Test Results Import (done) | time=0ms
 INFO: Sensor XmlFileSensor
 INFO: Sensor XmlFileSensor (done) | time=0ms
 INFO: Sensor Zero Coverage Sensor
-INFO: Sensor Zero Coverage Sensor (done) | time=16ms
+INFO: Sensor Zero Coverage Sensor (done) | time=20ms
 INFO: Sensor Code Colorizer Sensor
-INFO: Sensor Code Colorizer Sensor (done) | time=1ms
+INFO: Sensor Code Colorizer Sensor (done) | time=2ms
 INFO: Sensor CPD Block Indexer
 INFO: DefaultCpdBlockIndexer is used for cs
 INFO: Sensor CPD Block Indexer (done) | time=0ms
@@ -842,9 +845,9 @@ INFO: 41 files indexed
 INFO: Quality profile for cs: Sonar way
 INFO: Quality profile for js: Sonar way
 INFO: Sensor Lines Sensor
-INFO: Sensor Lines Sensor (done) | time=6ms
+INFO: Sensor Lines Sensor (done) | time=5ms
 INFO: Sensor SCM Sensor
-INFO: Sensor SCM Sensor (done) | time=71ms
+INFO: Sensor SCM Sensor (done) | time=32ms
 INFO: Sensor C#
 INFO: SonarAnalyzer.Scanner needs to be executed: true
 WARN: ***********************************************************************************
@@ -871,7 +874,7 @@ INFO: 15/18 files analyzed, starting to analyze: C:\Jenkins\workspace\xebialabs-
 INFO: 16/18 files analyzed, starting to analyze: C:\Jenkins\workspace\xebialabs-training\SampleWebApp\Models\InternalsInfo.cs
 INFO: 17/18 files analyzed, starting to analyze: C:\Jenkins\workspace\xebialabs-training\SampleWebApp\Properties\AssemblyInfo.cs
 INFO: Importing analysis results from C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\.sonar\SampleWebApp_SampleWebApp_CFFEE5E0-3B99-46E0-9A82-2E74621C17C5\output-cs
-INFO: Sensor C# (done) | time=6305ms
+INFO: Sensor C# (done) | time=5746ms
 INFO: Sensor Coverage Report Import
 INFO: Sensor Coverage Report Import (done) | time=0ms
 INFO: Sensor Coverage Report Import
@@ -899,16 +902,15 @@ ERROR: Parse error at line 1 column 1:
 11: /// <reference path="ActionRunnerUi.js" />
 
 INFO: 10/23 files analyzed, current file: C:\Jenkins\workspace\xebialabs-training\SampleWebApp\Scripts\jquery-ui-1.10.4.js
-INFO: 19/23 files analyzed, current file: C:\Jenkins\workspace\xebialabs-training\SampleWebApp\Scripts\modernizr-2.6.2.js
 INFO: Unit Test Coverage Sensor is started
 INFO: 23/23 source files have been analyzed
 INFO: Integration Test Coverage Sensor is started
 INFO: Overall Coverage Sensor is started
-INFO: Sensor JavaScript Squid Sensor (done) | time=20550ms
+INFO: Sensor JavaScript Squid Sensor (done) | time=16895ms
 INFO: Sensor Zero Coverage Sensor
-INFO: Sensor Zero Coverage Sensor (done) | time=33ms
+INFO: Sensor Zero Coverage Sensor (done) | time=26ms
 INFO: Sensor Code Colorizer Sensor
-INFO: Sensor Code Colorizer Sensor (done) | time=4ms
+INFO: Sensor Code Colorizer Sensor (done) | time=3ms
 INFO: Sensor CPD Block Indexer
 INFO: DefaultCpdBlockIndexer is used for cs
 INFO: DefaultCpdBlockIndexer is used for js
@@ -926,7 +928,7 @@ INFO: Quality profile for cs: Sonar way
 INFO: Sensor Lines Sensor
 INFO: Sensor Lines Sensor (done) | time=1ms
 INFO: Sensor SCM Sensor
-INFO: Sensor SCM Sensor (done) | time=9ms
+INFO: Sensor SCM Sensor (done) | time=11ms
 INFO: Sensor C#
 INFO: SonarAnalyzer.Scanner needs to be executed: true
 WARN: ***********************************************************************************
@@ -946,7 +948,7 @@ INFO: 8/11 files analyzed, starting to analyze: C:\Jenkins\workspace\xebialabs-t
 INFO: 9/11 files analyzed, starting to analyze: C:\Jenkins\workspace\xebialabs-training\ServiceLayer\UiClasses\DropDownListType.cs
 INFO: 10/11 files analyzed, starting to analyze: C:\Jenkins\workspace\xebialabs-training\ServiceLayer\UiClasses\MultiSelectListType.cs
 INFO: Importing analysis results from C:\Jenkins\workspace\xebialabs-training\.sonarqube\out\.sonar\SampleWebApp_SampleWebApp_D2813927-0F38-43C3-B47C-AE8F00D50CAE\output-cs
-INFO: Sensor C# (done) | time=5689ms
+INFO: Sensor C# (done) | time=5002ms
 INFO: Sensor Coverage Report Import
 INFO: Sensor Coverage Report Import (done) | time=0ms
 INFO: Sensor Coverage Report Import
@@ -956,7 +958,7 @@ INFO: Sensor Unit Test Results Import (done) | time=0ms
 INFO: Sensor XmlFileSensor
 INFO: Sensor XmlFileSensor (done) | time=0ms
 INFO: Sensor Zero Coverage Sensor
-INFO: Sensor Zero Coverage Sensor (done) | time=6ms
+INFO: Sensor Zero Coverage Sensor (done) | time=3ms
 INFO: Sensor Code Colorizer Sensor
 INFO: Sensor Code Colorizer Sensor (done) | time=1ms
 INFO: Sensor CPD Block Indexer
@@ -976,7 +978,7 @@ INFO: Quality profile for js: Sonar way
 INFO: Sensor Lines Sensor
 INFO: Sensor Lines Sensor (done) | time=0ms
 INFO: Sensor SCM Sensor
-INFO: Sensor SCM Sensor (done) | time=23ms
+INFO: Sensor SCM Sensor (done) | time=25ms
 INFO: Sensor C#
 INFO: Sensor C# (done) | time=0ms
 INFO: Sensor Coverage Report Import
@@ -990,7 +992,7 @@ INFO: Sensor XmlFileSensor (done) | time=0ms
 INFO: Sensor Zero Coverage Sensor
 INFO: Sensor Zero Coverage Sensor (done) | time=0ms
 INFO: Sensor Code Colorizer Sensor
-INFO: Sensor Code Colorizer Sensor (done) | time=2ms
+INFO: Sensor Code Colorizer Sensor (done) | time=3ms
 INFO: Sensor CPD Block Indexer
 INFO: DefaultCpdBlockIndexer is used for cs
 INFO: DefaultCpdBlockIndexer is used for js
@@ -1016,7 +1018,7 @@ INFO: Sensor XmlFileSensor (done) | time=0ms
 INFO: Sensor Zero Coverage Sensor
 INFO: Sensor Zero Coverage Sensor (done) | time=0ms
 INFO: Sensor Code Colorizer Sensor
-INFO: Sensor Code Colorizer Sensor (done) | time=0ms
+INFO: Sensor Code Colorizer Sensor (done) | time=1ms
 INFO: Sensor CPD Block Indexer
 INFO: Sensor CPD Block Indexer (done) | time=0ms
 INFO: Calculating CPD for 50 files
@@ -1024,23 +1026,23 @@ WARN: Too many duplication references on file [moduleKey=SampleWebApp:SampleWebA
 WARN: Too many duplication references on file [moduleKey=SampleWebApp:SampleWebApp:CFFEE5E0-3B99-46E0-9A82-2E74621C17C5, relative=Scripts/jquery-1.10.2.intellisense.js, basedir=C:\Jenkins\workspace\xebialabs-training\SampleWebApp] for block at line 16. Keep only the first 100 references.
 WARN: Too many duplication references on file [moduleKey=SampleWebApp:SampleWebApp:CFFEE5E0-3B99-46E0-9A82-2E74621C17C5, relative=Scripts/jquery-1.10.2.intellisense.js, basedir=C:\Jenkins\workspace\xebialabs-training\SampleWebApp] for block at line 16. Keep only the first 100 references.
 INFO: CPD calculation finished
-INFO: Analysis report generated in 1056ms, dir size=3 MB
-INFO: Analysis reports compressed in 699ms, zip size=1 MB
-INFO: Analysis report uploaded in 172ms
+INFO: Analysis report generated in 796ms, dir size=3 MB
+INFO: Analysis reports compressed in 621ms, zip size=1 MB
+INFO: Analysis report uploaded in 162ms
 INFO: ANALYSIS SUCCESSFUL, you can browse http://localhost:9000/dashboard/index/SampleWebApp
 INFO: Note that you will be able to access the updated dashboard once the server has processed the submitted analysis report
-INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AVoFmz8gLTp3fWegZW4D
-INFO: Task total time: 47.911 s
+INFO: More about the report processing at http://localhost:9000/api/ce/task?id=AVoFzHJZLTp3fWegZW4H
+INFO: Task total time: 38.903 s
 INFO: ------------------------------------------------------------------------
 INFO: EXECUTION SUCCESS
 INFO: ------------------------------------------------------------------------
-INFO: Total time: 52.069s
+INFO: Total time: 42.385s
 INFO: Final Memory: 54M/373M
 INFO: ------------------------------------------------------------------------
 The SonarQube Scanner has finished
-01:42:28.224  Creating a summary markdown file...
-01:42:28.23  Analysis results: http://localhost:9000/dashboard/index/SampleWebApp
-01:42:28.231  Post-processing succeeded.
+02:36:09.694  Creating a summary markdown file...
+02:36:09.697  Analysis results: http://localhost:9000/dashboard/index/SampleWebApp
+02:36:09.698  Post-processing succeeded.
 [Pipeline] httpRequest
 HttpMode: GET
 URL: http://localhost:9000//api/qualitygates/project_status?projectKey=SampleWebApp
@@ -1050,7 +1052,7 @@ Success code from [100?399]
 [Pipeline] echo
 Status: 200
 [Pipeline] echo
-Response: {"projectStatus":{"status":"OK","conditions":[{"status":"OK","metricKey":"new_security_rating","comparator":"GT","periodIndex":1,"errorThreshold":"1","actualValue":"1"},{"status":"OK","metricKey":"new_reliability_rating","comparator":"GT","periodIndex":1,"errorThreshold":"1","actualValue":"1"},{"status":"OK","metricKey":"new_maintainability_rating","comparator":"GT","periodIndex":1,"errorThreshold":"1","actualValue":"1"}],"periods":[{"index":1,"mode":"previous_version","date":"2017-02-04T01:29:42+0530"},{"index":2,"mode":"previous_analysis","date":"2017-02-04T01:29:42+0530","parameter":"2017-02-04"},{"index":3,"mode":"days","date":"2017-02-04T01:29:42+0530","parameter":"30"}]}}
+Response: {"projectStatus":{"status":"OK","conditions":[{"status":"OK","metricKey":"new_security_rating","comparator":"GT","periodIndex":1,"errorThreshold":"1","actualValue":"1"},{"status":"OK","metricKey":"new_reliability_rating","comparator":"GT","periodIndex":1,"errorThreshold":"1","actualValue":"1"},{"status":"OK","metricKey":"new_maintainability_rating","comparator":"GT","periodIndex":1,"errorThreshold":"1","actualValue":"1"}],"periods":[{"index":1,"mode":"previous_version","date":"2017-02-04T01:29:42+0530"},{"index":2,"mode":"previous_analysis","date":"2017-02-04T02:30:48+0530","parameter":"2017-02-04"},{"index":3,"mode":"days","date":"2017-02-04T01:29:42+0530","parameter":"30"}]}}
 [Pipeline] stage (Archive)
 Using the ‘stage’ step without a block argument is deprecated
 Entering stage Archive
@@ -1126,5 +1128,5 @@ Caused by: an exception which occurred:
 	in field e
 	in field program
 	in field threads
-	in object org.jenkinsci.plugins.workflow.cps.CpsThreadGroup@db5645
+	in object org.jenkinsci.plugins.workflow.cps.CpsThreadGroup@1c14d83
 Finished: FAILURE
