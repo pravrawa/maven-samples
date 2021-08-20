@@ -40,7 +40,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                echo 'Building Docker Image...'
+                echo 'Building Docker Image..'
                 //sh 'docker build -t tycoon2506/sample-app:1.1.0 .'
             }
         }
