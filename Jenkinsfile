@@ -14,7 +14,7 @@ pipeline {
 		stage('SCM Checkout') {
             steps {
                 echo 'Check out the code from Github..'
-				git credentialsId: 'github_cred', url: 'https://github.com/pravrawa/maven-samples.git'
+				git branch: 'integration', credentialsId: 'github_cred', url: 'https://github.com/pravrawa/maven-samples.git'
             }
         }
         stage('Build & SonarQube analysis') {
