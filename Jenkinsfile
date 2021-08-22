@@ -47,16 +47,10 @@ pipeline {
         }
 		stage('Delete Tomcat Container') {
             steps {
-				script{
-                if    	[[ $(docker ps | grep ':8090') = *tomcat-sample-webapp* ]]; then
-						echo "Found a Tomcat Container, Deleting it!"
-						docker stop tomcat-sample-webapp
-						docker rm tomcat-sample-webapp
-				else
-						echo "Will run Tomcat Container in next stage"
-   
-				fi
-				}
+				echo 'Deleting Tomcat Container..'
+				sh 'docker stop tomcat-sample-webapp'
+				sh 'docker rm tomcat-sample-webapp'
+				
             }
         }
 		stage('Run Docker container on Jenkins Agent') {
