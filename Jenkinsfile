@@ -15,15 +15,16 @@ pipeline {
             steps {
                 echo 'Check out the code from Github..'
 				git branch: 'integration', credentialsId: 'github_cred', url: 'https://github.com/pravrawa/maven-samples.git'
-				//echo "${env.BRANCH_NAME}"
+				
             }
         }
         stage('Build & SonarQube analysis') {
             steps {
                 echo 'Building & Code Analysis..'
-				withSonarQubeEnv('SonarQube') {
-                sh 'mvn clean package sonar:sonar'
-				}
+				sh 'mvn clean package'
+				//withSonarQubeEnv('SonarQube') {
+                //sh 'mvn clean package sonar:sonar'
+				//}
             }
         }
 		stage('Quality Gate') {
