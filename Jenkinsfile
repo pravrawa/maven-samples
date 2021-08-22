@@ -44,7 +44,7 @@ pipeline {
 		stage('Push image to Nexus Repository ') {
             steps {
                 echo 'Uploading Docker Image to Nexus repository..'
-				withDockerRegistry(credentialsId: 'nexus-cred', url: 'http://172.31.6.126:8081/nexus') {
+				withDockerRegistry(credentialsId: 'nexus-cred', url: 'http://172.31.6.126:8085') {
 				sh  'docker push 172.31.6.126:8085/tycoon2506/sample-app:$BUILD_NUMBER'
 				}
 				
