@@ -21,10 +21,9 @@ pipeline {
         stage('Build & SonarQube analysis') {
             steps {
                 echo 'Building & Code Analysis..'
-				sh 'mvn clean package'
-				//withSonarQubeEnv('SonarQube') {
-                //sh 'mvn clean package sonar:sonar'
-				//}
+				withSonarQubeEnv('SonarQube') {
+                sh 'mvn clean package sonar:sonar'
+				}
             }
         }
 		stage('Quality Gate') {
