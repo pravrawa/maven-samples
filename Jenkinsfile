@@ -14,7 +14,8 @@ pipeline {
 		stage('SCM Checkout') {
             steps {
                 echo 'Check out the code from Github..'
-				git credentialsId: 'github_cred', url: 'https://github.com/pravrawa/maven-samples.git'
+				git branch: 'integration', credentialsId: 'github_cred', url: 'https://github.com/pravrawa/maven-samples.git'
+				//echo "${env.BRANCH_NAME}"
             }
         }
         stage('Build & SonarQube analysis') {
@@ -41,12 +42,26 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker Image..'
-                sh 'docker build -t tycoon2506/sample-app:1.1.0 .'
+                sh 'docker build -t tycoon2506/sample-app:$BUILD_NUMBER .'
+            }
+        }
+		stage('Delete Tomcat Container') {
+            steps {
+				echo 'Deleting Tomcat Container..'
+				sh 'docker stop tomcat-sample-webapp'
+				sh 'docker rm tomcat-sample-webapp'
+				
+            }
+        }
+		stage('Run Docker container on Jenkins Agent') {
+            steps {
+                echo 'Running Tomcat Container..'
+                sh 'docker run --name tomcat-sample-webapp -d -p 8090:8080 tycoon2506/sample-app:$BUILD_NUMBER'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying..'
                 
             }
         }
