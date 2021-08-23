@@ -2,7 +2,6 @@ pipeline {
     agent any
 	tools {
         maven 'Maven 3.3.3'
-        //jdk 'jdk11'
     }
     stages {
 		stage('Clean Up Workspace') {
@@ -33,14 +32,6 @@ pipeline {
                 
             }
         }
-		stage('Quality Gate') {
-            steps {
-                echo 'Waiting for Quality Gate results..'
-				//timeout(time: 1, unit: 'MINUTES') {
-                //waitForQualityGate abortPipeline: false
-                //}
-            }
-        }
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker Image..'
@@ -68,12 +59,6 @@ pipeline {
             steps {
                 echo 'Running Tomcat Container..'
                 sh 'docker run --name tomcat-sample-webapp -d -p 8090:8080 172.31.6.126:8085/tycoon2506/sample-app:$BUILD_NUMBER'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying..'
-                
             }
         }
     }
