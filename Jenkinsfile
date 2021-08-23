@@ -26,6 +26,13 @@ pipeline {
 				}
             }
         }
+		stage('JUnit Test Report') {
+            steps {
+                echo 'Publishing Junit Test reports..'
+				junit allowEmptyResults: true, testResults: 'single-module/target/surefire-reports/**.xml'
+                
+            }
+        }
 		stage('Quality Gate') {
             steps {
                 echo 'Waiting for Quality Gate results..'
