@@ -49,14 +49,14 @@ pipeline {
         }
 		stage('Delete Tomcat Container') {
             steps {
-				if    	[[ $(docker ps | grep ':8090') = *tomcat-sample-webapp* ]]; then
+			sh '	if    	[[ $(docker ps | grep ':8090') = *tomcat-sample-webapp* ]]; then
 		echo "Found a Tomcat Container, Deleting it!"
 		docker stop tomcat-sample-webapp
 		docker rm tomcat-sample-webapp
 else
 		echo "Will run Tomcat Container in next stage"
    
-fi
+fi'
 				
             }
         }
