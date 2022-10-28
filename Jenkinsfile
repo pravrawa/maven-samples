@@ -63,7 +63,7 @@ fi\''''
 		stage('Run Docker container on Jenkins Agent') {
             steps {
                 echo 'Running Tomcat Container..'
-                sh 'docker run --name tomcat-sample-webapp -d -p 8090:8080 172.31.6.126:8085/tycoon2506/sample-app:$BUILD_NUMBER'
+                sh 'docker run --name tomcat-sample-webapp -d -p 8090:8080 nexus-demo:8085/tycoon2506/sample-app:$BUILD_NUMBER'
             }
         }
     }
