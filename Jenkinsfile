@@ -28,7 +28,7 @@ pipeline {
         }
 		stage('JUnit Test Report') {
             steps {
-                echo 'Publishing Junit Test reports..'
+                echo 'Publishing Junit Test reports...'
 				junit allowEmptyResults: true, testResults: 'single-module/target/surefire-reports/**.xml'
                 
             }
