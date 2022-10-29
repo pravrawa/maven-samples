@@ -35,14 +35,14 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 echo 'Building Docker Image..'
-                sh 'docker build -t nexus-demo:8085/tycoon2506/sample-app:$BUILD_NUMBER .'
+                sh 'docker build -t 10.80.0.241:8085/tycoon2506/sample-app:$BUILD_NUMBER .'
             }
         }
 		stage('Push image to Nexus Repository ') {
             steps {
                  echo 'Uploading Docker Image to Nexus repository..'
-				withDockerRegistry(credentialsId: 'nexus-cred', url: 'nexus-demo:8085') {
-				sh  'docker push nexus-demo:8085/tycoon2506/sample-app:$BUILD_NUMBER'
+				withDockerRegistry(credentialsId: 'nexus-cred', url: '10.80.0.241:8085') {
+				sh  'docker push 10.80.0.241:8085/tycoon2506/sample-app:$BUILD_NUMBER'
 				}
 		    
 		    
@@ -62,7 +62,7 @@ pipeline {
 		stage('Run Docker container on Jenkins Agent') {
             steps {
                 echo 'Running Tomcat Container..'
-                sh 'docker run --name tomcat-sample-webapp -d -p 8090:8080 nexus-demo:8085/tycoon2506/sample-app:$BUILD_NUMBER'
+                sh 'docker run --name tomcat-sample-webapp -d -p 8090:8080 10.80.0.241:8085/tycoon2506/sample-app:$BUILD_NUMBER'
             }
         }
     }
