@@ -51,7 +51,7 @@ pipeline {
             steps {
 				sh '''if      [[ $(docker ps | grep \':8090\') = *tomcat-sample-webapp* ]]; then
                 echo "Found a Tomcat Container, Deleting it!"
-                docker stop tomcat-sample-webapp
+                docker stop --time=120 tomcat-sample-webapp
                 docker rm tomcat-sample-webapp
 else
                 echo "Will run Tomcat Container in next stage"
